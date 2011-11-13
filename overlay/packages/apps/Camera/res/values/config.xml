@@ -26,5 +26,7 @@
 
 	<!-- FFC parameter filtering -->
 	<bool name="ffc_canFocus">false</bool>
-	<bool name="ffc_canZoom">false</bool>
+	<bool name="ffc_canZoom">true</bool>
+	<!-- Resolution filtering -->
+	<string name="filtered_pictureSizes">1600x1200</string>
 </resources>

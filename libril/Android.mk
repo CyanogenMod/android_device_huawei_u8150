@@ -1,5 +1,3 @@
-# Copyright 2006 The Android Open Source Project
-
 ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),u8150)
 
 LOCAL_PATH := $(call my-dir)
@@ -26,4 +24,4 @@ LOCAL_LDLIBS += -lpthread
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # build for u8150
+endif

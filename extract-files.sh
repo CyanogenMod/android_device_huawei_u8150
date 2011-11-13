@@ -29,7 +29,6 @@ for DIR in $DIRS; do
 done
 
 adb pull /system/bin/akmd2 ../../../vendor/huawei/$DEVICE/proprietary/bin/akmd2
-adb pull /system/bin/load_oemlogo ../../../vendor/huawei/$DEVICE/proprietary/bin/load_oemlogo
 adb pull /system/bin/hci_qcomm_init ../../../vendor/huawei/$DEVICE/proprietary/bin/hci_qcomm_init
 adb pull /system/bin/qmuxd ../../../vendor/huawei/$DEVICE/proprietary/bin/qmuxd
 adb pull /system/bin/rild ../../../vendor/huawei/$DEVICE/proprietary/bin/rild
@@ -95,7 +94,6 @@ chmod 755 ../../../vendor/huawei/u8150/proprietary/bin/*
 # All the blobs necessary for U8150
 PRODUCT_COPY_FILES += \\
     vendor/huawei/__DEVICE__/proprietary/bin/akmd2:system/bin/akmd2 \\
-    vendor/huawei/__DEVICE__/proprietary/bin/load_oemlogo:system/bin/load_oemlogo \\
     vendor/huawei/__DEVICE__/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \\
     vendor/huawei/__DEVICE__/proprietary/bin/qmuxd:system/bin/qmuxd \\
     vendor/huawei/__DEVICE__/proprietary/bin/rild:system/bin/rild

@@ -29,8 +29,8 @@ ro.workaround.noautofocus=1
 
 # System and Misc.
 dalvik.vm.execution-mode=int:jit
-dalvik.vm.heapsize=32m
-ro.compcache.default=18
+dalvik.vm.heapsize=24m
+ro.compcache.default=26
 ro.com.google.locationfeatures=0
 ro.tether.denied=false
 sys.checkfs.fat=false

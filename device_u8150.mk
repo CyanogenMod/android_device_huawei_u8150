@@ -20,9 +20,9 @@ PRODUCT_PACKAGES += \
     hwprops \
     rzscontrol \
     Gallery \
+    lights.u8150 \
     copybit.u8150 \
-    gps.u8150 \
-    lights.msm7k
+    gps.u8150
 
 # Vold config
 PRODUCT_COPY_FILES += \
@@ -49,21 +49,15 @@ PRODUCT_COPY_FILES += \
 
 # OEM logo and boot splash
 PRODUCT_COPY_FILES += \
-    device/huawei/u8150/prebuilt/initlogo.rle:root/initlogo.rle \
-    device/huawei/u8150/prebuilt/installlogo:system/media/installlogo \
-    device/huawei/u8150/prebuilt/media/oemlogo.mbn:system/media/oemlogo.mbn
-
-#  Add autorun.iso to stop kernel complaining about it..
-PRODUCT_COPY_FILES += \
-    device/huawei/u8150/prebuilt/autorun.iso:system/cdrom/autorun.iso
+    device/huawei/u8150/prebuilt/initlogo.rle:root/initlogo.rle
 
 # Wi-Fi releated
 PRODUCT_COPY_FILES += \
+    device/huawei/u8150/prebuilt/etc/firmware/fw_bcm4319_apsta.bin:system/etc/firmware/fw_bcm4319_apsta.bin \
     device/huawei/u8150/prebuilt/etc/firmware/fw_bcm4319.bin:system/etc/firmware/fw_bcm4319.bin \
     device/huawei/u8150/prebuilt/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
     device/huawei/u8150/prebuilt/lib/modules/bcm4319.ko:system/lib/modules/bcm4319.ko \
     device/huawei/u8150/prebuilt/lib/modules/zram.ko:system/lib/modules/zram.ko \
-    device/huawei/u8150/prebuilt/lib/modules/ramzswap.ko:system/lib/modules/ramzswap.ko \
     device/huawei/u8150/prebuilt/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     device/huawei/u8150/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
